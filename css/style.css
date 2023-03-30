@@ -1,0 +1,90 @@
+/* Start Global Rules */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-transform: capitalize;
+}
+html {
+	font-size: 62.5%;
+}
+h2 {
+	display: block;
+	font-family: "Big Shoulders Display", cursive;
+	font-size: 4rem;
+	color: hsl(0, 0%, 95%);
+	margin: 3.5rem 0;
+	font-weight: bold !important;
+}
+img {
+	display: block;
+	width: 30%;
+}
+.cars {
+	display: flex;
+}
+@media (max-width: 900px) {
+	.cars {
+		flex-direction: column;
+	}
+}
+button {
+	display: inline-block;
+	font-family: "Lexend Deca", sans-serif;
+	border: 2px solid hsl(0, 0%, 95%);
+	padding: 1.2rem 2.8rem;
+	border-radius: 35px;
+	font-weight: 400;
+	padding: 1.2rem 2.8rem;
+	text-decoration: none;
+	background-color: hsl(0, 0%, 95%);
+}
+
+button:hover {
+	background-color: transparent;
+	color: white !important;
+}
+
+p {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+.content {
+	margin-bottom: 8rem;
+	width: 170.844;
+	height: 220.75;
+}
+.container {
+	padding-right: 15px;
+	margin-right: auto;
+	max-width: 93rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+/* End Global Rules */
+/* Start Cars */
+.cars .car-1 {
+	border-radius: 8px 0 0 8px;
+}
+@media (max-width: 900px) {
+	.car-1 {
+		border-radius: 8px 8px 0 0 !important;
+		margin-top: 870px;
+	}
+}
+.cars .car-3 {
+	border-radius: 0 8px 8px 0;
+}
+@media (max-width: 900px) {
+	.car-3 {
+		border-radius: 0 0 8px 8px !important;
+		margin-bottom: 20px;
+	}
+}
+.car {
+	padding: 5rem;
+}
+
+/* End Cars */
